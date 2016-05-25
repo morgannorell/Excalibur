@@ -20,7 +20,7 @@ namespace Excalibur
         private void btnSave_Click(object sender, EventArgs e)
         {
             Database save = new Database();
-
+            List<Person> ps = new List<Person>();
             string sql = "";
 
             save.Insert(sql);

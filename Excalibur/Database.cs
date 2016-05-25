@@ -11,6 +11,9 @@ namespace Excalibur
     class Database
     {
         private NpgsqlConnection _conn;
+        private NpgsqlCommand _cmd;
+        private NpgsqlDataReader _dr;
+
         public Database()
         {
             _conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["db_connection"].ConnectionString);
@@ -20,6 +23,11 @@ namespace Excalibur
         public void Insert(string data)
         {
           
+        }
+
+        public void Select()
+        {
+
         }
     }
 }
