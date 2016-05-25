@@ -19,7 +19,7 @@ namespace Excalibur
 
         public void Insert(string data)
         {
-
+          
         }
     }
 }
