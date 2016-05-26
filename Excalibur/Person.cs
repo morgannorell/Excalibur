@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Excalibur
 {
-    class Person
+    class Person:ErrorHandler
     {
         public int Id { get; set; }
         public string Firstname { get; set; }
         public string Lastname { get; set; }
+
+
+        public bool Error { get; set; }
 
         public void AddPerson()
         {
