@@ -15,15 +15,32 @@ namespace Excalibur
         public Form1()
         {
             InitializeComponent();
+            UpdateList();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Database save = new Database();
-            List<Person> ps = new List<Person>();
-            string sql = "";
+            string firstname = txtFirstname.Text;
+            string lastname = txtLastname.Text;
 
-            save.Insert(sql);
+            Person ps = new Person()
+            {
+                Firstname = firstname,
+                Lastname = lastname
+            };
+
+            ps.AddPerson();
+            UpdateList();   
+        }
+
+        private void UpdateList()
+        {
+            Person ps = new Person();
+            List<Person> pList = new List<Person>();
+
+            pList = ps.SelectPerson();
+
+            lbxPersons.DataSource = pList;
         }
     }
 }

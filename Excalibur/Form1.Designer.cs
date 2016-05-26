@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbxPersons = new System.Windows.Forms.ListBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.lblFistname = new System.Windows.Forms.Label();
             this.txtFirstname = new System.Windows.Forms.TextBox();
@@ -36,14 +36,14 @@
             this.lblLastname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lbxPersons
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 121);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(303, 199);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.TabStop = false;
+            this.lbxPersons.FormattingEnabled = true;
+            this.lbxPersons.Location = new System.Drawing.Point(12, 121);
+            this.lbxPersons.Name = "lbxPersons";
+            this.lbxPersons.Size = new System.Drawing.Size(303, 199);
+            this.lbxPersons.TabIndex = 0;
+            this.lbxPersons.TabStop = false;
             // 
             // btnSave
             // 
@@ -97,7 +97,7 @@
             this.Controls.Add(this.txtFirstname);
             this.Controls.Add(this.lblFistname);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbxPersons);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -107,7 +107,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbxPersons;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblFistname;
         private System.Windows.Forms.TextBox txtFirstname;
